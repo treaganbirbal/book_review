@@ -3,22 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // eslint-disable-next-line no-undef
+  const [books, setBooks] = useState({
+    id:0, 
+    title:"",
+    author:"", 
+    submitted:false
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
