@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Todo = () => {
+const Todo = ({todo, index}) => {
     return (
-        <>
-            <h1>Single Todo</h1>
-        </>
+        <div className='todo'>
+            {todo.text}
+        </div>
     )
 }
 
