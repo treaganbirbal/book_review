@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-
+//main compoonent
 function App() {
-  // eslint-disable-next-line no-undef
-  const [count, setCount] = React.useState(0)
-  return (
-    <div className="App">
-      <p>Book ID is {count}</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click Me
-        </button>
-
-    </div>
-  );
+  // destructure  value of state, function to update state(like this.setState())
+  const [todos, setTodos] = useState([
+    {
+      text: 'Learn about React', 
+      isCompleted: false,
+    },
+    {
+      text: 'Meet friend for lunch', 
+      isCompleted: false,
+    },
+    {
+      text: 'Pay Bills', 
+      isCompleted: false,
+    },
+  ])
 }
 
 export default App;
