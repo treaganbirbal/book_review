@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Todo from './Todo.js'
 
 //main compoonent
 function App() {
@@ -23,7 +24,7 @@ function App() {
       <div className='todos-list'>
         <h1>Todos</h1>
         {todos.map((todo, index ) => (
-          {/* <Todo /> */}
+          <Todo />
         ))}
       </div>
     </div>
